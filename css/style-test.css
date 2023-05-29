@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+
+* {
+    font-family: Poppins;
+}
+
+/*    *    COLORS    *     */
+/* 
+1 - dark
+2 - middle
+3 - light
+*/
+.sidebar {
+    background: #4f5a77;
+}
+.nav-color {
+    background: #667292;
+    color: #353955;
+}
+.dark_color-3 {
+    background: #bccad6;
+    color:#667292;
+}
+.bright_color {
+  background: blueviolet;
+}
+.light_color-beige {
+  background: #E9E5E5;
+  color: #667292;
+}
+.light_color-green {
+  background: #D9D9D9;
+  color: #667292;
+}
+.header-color {
+  background: #BCCAD6;
+  color: #667292;
+}
+.footer-color {
+  background: #8D9DB6;
+}
+.r-sidebar-color {
+  background: #C2D4DD;
+}
+
+/*    *    TUTorial    *     */
+
+
+
+* {
+  margin: 0px; /*убираем нежеланные default свойства*/
+  padding: 0px; /*тож самое*/
+  box-sizing: border-box; /*обязательно, чтобы не надо было высчитывать отступы с ширины (т.е. никаких width: 96%; borders: 2% and 2%)*/
+}
+
+#logo-div {
+  width: 100%; /*по ширине родителя*/
+  min-height: 30px; /*меньше не будет*/
+  padding-left: 2%; /*отступ контента (но не фона) слева*/
+  padding-right: 2%;
+  line-height: 50px; /*текст вертикальному по центру. Указывать значение одинаковое с min-height: значение;*/
+ /* margin-bottom: 10px; /*отступ снизу*/
+}
+
+#nav-div {
+  height: 100%;
+  min-height: 80px;
+  text-align: center;
+  line-height: 30px;
+  /* margin-bottom: 10px; */
+}
+
+#main-div {
+  width: 100%;
+  min-height: 400px;
+  /* margin-bottom: 10px; */
+}
+#sidebar-l-div {
+  width: 15%;
+  min-height: 400px;
+  float: left;
+  text-align: center;
+  line-height: 400px;
+  position: relative;
+}
+#bodyarea-div {
+  width: 80%;
+  min-height: 400px;
+  float: left;
+  text-align: center;
+  line-height: 400px;
+  position: relative;
+}
+#header-banner-div {
+  height: 20%;
+  min-height: 70px;
+  text-align: center;
+  line-height: 70px;
+  /* margin-bottom: 10px; */
+}
+#post-div {
+  width: 100%;
+  height: 80%;
+  min-height: 300px;
+  position: absolute; 
+  bottom: 0;
+  text-align: center;
+}
+
+#sidebar-r-div {
+  width: 5%;
+  min-height: 400px;
+  float: left;
+  text-align: center;
+  line-height: 400px;
+  background: #C2D4DD;
+}
+.clearfix::after { /*очищает parent от float свойств, чтобы фон не сьедался детьми (блоками внутри)*/
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#footer-div {
+  width: 100%;
+  min-height: 50px;
+  text-align: center;
+  line-height: 50px;
+}
+#wrapper-div {
+  width: 80%; /*т.к. дети 100% ширины родителя, то и они станут 80%*/
+  height: 100%;
+ /* background: orange; /*контейнер окрасится*/
+  margin: auto; /* контент/дети по центру*/
+}
+
+* {
+  font-family: Poppins;
+}
+
+ul {
+  list-style-type: none;
+}
+
+
+li {
+  background: #8D9DB6;
+  height: 20%;
+  width: 100%;
+  min-height: 50px;
+  text-align: center;
+  line-height: 70px;
+}
+
+.li-color-1 {
+  background: #4f5a77;
+  padding: 25px;
+  padding-right: 130px;
+  padding-left: 20px;
+  text-align: center;
+  line-height: 20px;
+}
+.li-color-2 {
+  background: #BCCAD6;
+  padding: 25px;
+  padding-right: 130px;
+  padding-left: 20px;
+  text-align: center;
+  line-height: 20px;
+}
+.li-color-3 {
+  background: #D9D9D9;
+  padding: 25px;
+  padding-right: 130px;
+  padding-left: 20px;
+  text-align: center;
+  line-height: 20px;
+}
+ 
+a {
+  text-decoration: none;
+  color: #667292;
+}
+
+.li2-color-1 {
+  background: #4f5a77;
+  padding: 25px;
+  text-align: center;
+  line-height: 20px;
+}
+/* .sidebar-l-child {
+  width: 100%;
+  height: 17%;
+  min-height: 60px;
+  position: absolute; 
+  text-align: center;
+}
+#side-l-child-1 {
+  top: 0;
+  background: yellowgreen;
+}
+#side-l-child-2 {
+}
+#side-l-child-3 {
+  bottom: 0;
+}
+ */
